@@ -61,21 +61,15 @@
 }
 
 .jumbotron .nav-item .btn-purple {
-  background-image: -webkit-linear-gradient(left, #8e44ad 50%, transparent 50%);
-  background-image: -o-linear-gradient(left, #8e44ad 50%, transparent 50%);
-  background-image: linear-gradient(to right, #8e44ad 50%, transparent 50%);
+  background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
 }
 
 .jumbotron .nav-item .btn-yellow {
-  background-image: -webkit-linear-gradient(bottom left, #f1c40f 50%, transparent 50%);
-  background-image: -o-linear-gradient(bottom left, #f1c40f 50%, transparent 50%);
-  background-image: linear-gradient(to top right, #f1c40f 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
 }
 
 .jumbotron .nav-item .btn-blue {
-  background-image: -webkit-linear-gradient(top left, #3498db 50%, transparent 50%);
-  background-image: -o-linear-gradient(top left, #3498db 50%, transparent 50%);
-  background-image: linear-gradient(to bottom right, #3498db 50%, transparent 50%);
+  background-image: linear-gradient(135deg, #3498db 50%, transparent 50%);
 }
 
 .jumbotron .navbar-brand {
@@ -93,17 +87,5 @@
 .jumbotron .navbar-brand:hover {
   color: white;
 }
-
-/*@media (max-width: 767px) {
-    
-    .nav-link-mob {
-		color: blue;
-		padding: 4px;
-		border: 1px solid white;
-		border-radius: 5px;
-		text-align: center;
-		width: 100%;
-	}
-}*/
 
 /*# sourceMappingURL=style.css.map */
