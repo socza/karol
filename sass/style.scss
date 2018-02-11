@@ -1,0 +1,108 @@
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+
+.jumbotron {
+	height: 400px;
+	background: url('../images/jum3.jpg');
+	background-size: cover;
+	background-position: 50%;
+	margin: 0;
+	padding: 0;
+	border-radius: 0px;
+
+	.languages {
+		position: relative;
+		width: 50px;
+		
+	
+		img {
+			width: 20px;
+			height: 13px;
+			margin: 5px;
+			border-radius: 4px;
+			border: 1px solid silver;
+			
+		}
+
+	}
+
+	.navbar-toggler {
+		margin: 5px;
+		outline: none;
+		border: 1px solid white;
+		margin-left: -80px;
+		background-color: rgba(0, 0, 0, 0.6);
+
+		.navbar-toggler-icon {
+			color: white;
+			padding-top: 5px;
+    	}
+
+	}
+
+	.nav-item {
+		margin: 5px;
+		
+		[class^="nav-link"] {
+			color: white;
+			padding: 2px 20px;
+			border: 1px solid white;
+			border-radius: 5px;
+			text-align: center;
+			background-position: 100% 0;
+			background-size: 300%;
+			transition: 1s;
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+
+		[class^="nav-link"]:hover {
+			background-position: 0 100%;
+		}
+
+		.btn-purple {
+	        background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
+		}
+
+		.btn-yellow {
+			background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+		}
+		
+		.btn-blue {
+			background-image: linear-gradient(135deg, #3498db 50%, transparent 50%);
+		}
+	
+	}
+	
+	.navbar-brand {
+		color: white;
+		margin: 5px;
+		font-weight: bold;
+		font-size: 30px;
+		border: 1px solid white;
+		padding: 15px;
+		background-color: rgba(0, 0, 0, 0.6);
+		border-radius: 5px;
+		margin-left: 40px;
+	}
+
+	.navbar-brand:hover {
+		color: white;
+	}
+
+}
+
+/*@media (max-width: 767px) {
+    
+    .nav-link-mob {
+		color: blue;
+		padding: 4px;
+		border: 1px solid white;
+		border-radius: 5px;
+		text-align: center;
+		width: 100%;
+	}
+}*/
