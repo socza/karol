@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -14,25 +14,26 @@
   border-radius: 0px;
 }
 
-.jumbotron .languages {
-  position: relative;
-  width: 50px;
-}
-
-.jumbotron .languages img {
+.jumbotron img {
   width: 20px;
-  height: 13px;
-  margin: 5px;
+  height: 15px;
+  margin: 15px 12px 0 25px;
   border-radius: 4px;
   border: 1px solid silver;
+  float: right;
+  box-shadow: 0px 0px 7px gold;
+}
+
+.jumbotron .navbar {
+  top: 50px;
 }
 
 .jumbotron .navbar-toggler {
-  margin: 5px;
+  margin: 8px;
   outline: none;
   border: 1px solid white;
-  margin-left: -80px;
   background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 15px white;
 }
 
 .jumbotron .navbar-toggler .navbar-toggler-icon {
@@ -41,12 +42,13 @@
 }
 
 .jumbotron .nav-item {
-  margin: 5px;
+  margin: 8px;
 }
 
 .jumbotron .nav-item [class^="nav-link"] {
   color: white;
-  padding: 2px 20px;
+  width: 110px;
+  padding: 2px;
   border: 1px solid white;
   border-radius: 5px;
   text-align: center;
@@ -54,6 +56,7 @@
   background-size: 300%;
   transition: 1s;
   background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 15px white;
 }
 
 .jumbotron .nav-item [class^="nav-link"]:hover {
@@ -74,14 +77,16 @@
 
 .jumbotron .navbar-brand {
   color: white;
-  margin: 5px;
+  padding-top: 30px;
   font-weight: bold;
   font-size: 30px;
   border: 1px solid white;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  margin-left: 40px;
+  margin-left: 31px;
+  text-shadow: 0px 0px 8px black;
+  box-shadow: 0px 0px 15px white;
 }
 
 .jumbotron .navbar-brand:hover {
