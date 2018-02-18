@@ -1,92 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Michroma');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
 .container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-.jumbotron {
-	height: 400px;
+/* grids */
+.row:before,
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*='col-'] {
+	float: left;
+ 	margin: 0 auto;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offest-7 {margin-left: 58.33%;}
+.col-offest-8 {margin-left: 66.66%;}
+.col-offest-9 {margin-left: 75%;}
+.col-offest-10 {margin-left: 83.33%;}
+.col-offest-11 {margin-left: 91.66%;}
+
+nav {
+	background: linear-gradient(silver, white);
+	height: 61px;
+	width: 100%;
+	content: "";
+	display: table;
+	clear: both;
+	border-bottom: 1px solid black;
+	
+	.languages {
+		width: 100%;
+		height: 26px;
+		border-bottom: 1px solid black;
+		background-color: gray;
+		box-shadow: 0 0 5px black;
+		
+		a {
+			display: block;
+			float: right;
+			padding: 5px 15px;
+		
+			img {
+				border-radius: 3px;
+				box-shadow: 0 0 8px black;
+			}
+			
+			img:hover {
+				box-shadow: 0 0 8px white;
+			}
+		}
+	}
+
+	.menu {
+		
+		.links {
+			display: block;
+			float: left;
+			height: 61px;
+			
+			ul {
+				display: block;
+				float: left;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0;
+				line-height: 72px;
+				text-align: center;
+
+				li {
+				display: inline-block;
+				padding: 0 20px;
+
+					a {
+						text-decoration: none;
+						color: #00c7e8;
+						text-transform: uppercase;
+						font-family: 'Michroma', sans-serif;
+						font-size: 14px;
+						font-weight: bold;
+						border-left: 1px solid grey;
+						padding: 0 16px;
+					}
+
+					a:hover {
+						color: #00c7e8;
+						transition: color 0.4s;
+						border-left: 1px dashed grey;
+					}
+				}	
+			}
+		}
+	
+		.logo {
+			display: block;
+			float: right;
+			text-align: left;
+			height: 70px;
+			
+			img {
+				margin-top: 10px;
+				width: 180px;
+				height: auto;
+			}
+		}
+	}
+}
+
+.hero {
+	height: 320px;
 	background: url('../images/jumbotron.jpg');
 	background-size: cover;
 	background-position: 50%;
-	margin: 0;
-	padding: 0;
-	border-radius: 0px;
-	
-	img {
-		width: 20px;
-		height: 15px;
-		margin: 15px 12px 0 25px;
-		border-radius: 4px;
-		border: 1px solid silver;
-		float: right;
-		box-shadow: 0px 0px 7px gold;
-	}
-	
-	.navbar {
-		top: 50px;
-	}
+}
 
-	.navbar-toggler {
-		margin: 8px;
-		outline: none;
-		border: 1px solid white;
-		background-color: rgba(0, 0, 0, 0.6);
-		box-shadow: 0px 0px 15px white;
-		.navbar-toggler-icon {
-			color: white;
-			padding-top: 5px;
-		}
-	}
-
-	.nav-item {
-		margin: 8px;
-		[class^="nav-link"] {
-			color: white;
-			width: 110px;
-			padding: 2px;
-			border: 1px solid white;
-			border-radius: 5px;
-			text-align: center;
-			background-position: 100% 0;
-			background-size: 300%;
-			transition: 1s;
-			background-color: rgba(0, 0, 0, 0.6);
-			box-shadow: 0px 0px 15px white;
-		}
-
-		[class^="nav-link"]:hover {
-			background-position: 0 100%;
-		}
-
-		.btn-purple {
-			background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
-		}
-
-		.btn-yellow {
-			background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-		}
-
-		.btn-blue {
-			background-image: linear-gradient(135deg, #3498db 50%, transparent 50%);
-		}
-	}
-
-	.navbar-brand {
+footer {
+	background-color: silver;
+	text-align: center;
+	clear: both;
+	height: 40px;
+		
+	p {
+		margin: 0;
+		padding: 10px;
 		color: white;
-		padding-top: 30px;
-		font-weight: bold;
-		font-size: 30px;
-		border: 1px solid white;
-		padding: 15px;
-		background-color: rgba(0, 0, 0, 0.5);
-		border-radius: 5px;
-		margin-left: 31px;
-		text-shadow: 0px 0px 8px black;
-		box-shadow: 0px 0px 15px white;
+		text-shadow: 0 0 1px black;
 	}
+}
 
-	.navbar-brand:hover {
-		color: white;
+/*MEDIA*/
+/*urządzenia duże (desktopy, monitory, tv)*/
+@media (min-width: 1200px) {
+	
+}
+
+/*urządzenia średnie*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/*urządzenia małe (tablety)*/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/*urządzenia bardzo małe (telefony)*/
+@media (max-width: 767px) {
+
+	nav {
+		
+		.menu {
+			
+			.links {
+				float: none;
+				height: 100px;
+				
+				ul {
+					line-height: 30px;
+					
+					li {
+					display: block;
+					
+						a {
+							border-left: 0px;
+						}
+
+						a:hover {
+							border-left: 0px;
+						}
+					}	
+				}
+			}
+		
+			.logo {
+				float: none;
+				margin-top: 10px;
+				width: 100%;
+				text-align: center;
+			}
+		}
 	}
 }
