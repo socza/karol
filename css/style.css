@@ -133,20 +133,21 @@ nav {
 nav .languages {
   width: 100%;
   height: 26px;
-  border-bottom: 1px solid black;
+  /*border-top: 1px solid black;*/
+  /*border-bottom: 1px solid black;*/
   background-color: gray;
-  box-shadow: 0 0 5px black;
+  /*box-shadow: 0 0 5px black;*/
 }
 
 nav .languages a {
   display: block;
   float: right;
-  padding: 5px 15px;
+  padding: 1px 15px;
 }
 
 nav .languages a img {
-  border-radius: 3px;
-  box-shadow: 0 0 8px black;
+  /*border-radius: 3px;*/
+  /*box-shadow: 0 0 8px black;*/
 }
 
 nav .languages a img:hover {
@@ -176,11 +177,11 @@ nav .menu .links ul li {
 
 nav .menu .links ul li a {
   text-decoration: none;
-  color: #00c7e8;
+  color: black;
   text-transform: uppercase;
   font-family: 'Michroma', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
   border-left: 1px solid grey;
   padding: 0 16px;
 }
@@ -209,6 +210,24 @@ nav .menu .logo img {
   background: url("../images/jumbotron.jpg");
   background-size: cover;
   background-position: 50%;
+  border-bottom: 1px solid black;
+}
+
+.hero .btn-primary.visit {
+  position: relative;
+  width: 150px;
+  top: 140px;
+  left: calc(50% - 75px);
+  outline: none;
+  color: #000 !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid #000 !important;
+}
+
+.hero .btn-primary.visit:hover {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid #fff !important;
 }
 
 footer {

@@ -2,7 +2,10 @@
 <html lang="pl">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -29,9 +32,30 @@
 		</nav>
 		
 		<section class="hero">
+			<div>
+				<button type="button" class="btn btn-primary btn-lg visit" data-toggle="modal" data-target="#visit">
+	  				Umów wizytę
+				</button>
+				<div id="visit" class="modal fade" role="dialog">
+	  				<div class="modal-dialog">
+	     				<div class="modal-content">
+							<div class="modal-header">
+	         					<h4>Zadzwoń do nas</h4>
+	       					</div>
+	       					<div class="modal-body">
+	       						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sequi, hic iure, laboriosam in sapiente obcaecati distinctio fuga. Nam in facilis facere quaerat repudiandae porro, dolore explicabo nisi atque nesciunt.</p>
+	       					</div>
+	       					<div class="modal-footer">
+	       						<button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+	       					</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		
 		<section class="numbers">
+			
 		</section>
 		
 		<section class="gallery">
