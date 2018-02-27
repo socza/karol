@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One");
 @import url("https://fonts.googleapis.com/css?family=Michroma");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 * {
   box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -169,25 +171,24 @@ body {
 
 /* END PHONE */
 nav {
-  background: linear-gradient(silver, white);
-  height: 61px;
+  background: #404040;
+  height: 91px;
   width: 100%;
   content: "";
   display: table;
   clear: both;
-  border-bottom: 1px solid black;
 }
 
 nav .languages {
   width: 100%;
   height: 26px;
-  background-color: gray;
+  background-color: #313234;
 }
 
 nav .languages a {
   display: block;
   float: right;
-  padding: 1px 15px;
+  padding: 3px 15px;
 }
 
 nav .languages a img {
@@ -202,7 +203,7 @@ nav .languages a img:hover {
 nav .menu .links {
   display: block;
   float: left;
-  height: 61px;
+  height: 85px;
 }
 
 nav .menu .links ul {
@@ -211,7 +212,7 @@ nav .menu .links ul {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  line-height: 72px;
+  line-height: 90px;
   text-align: center;
 }
 
@@ -222,19 +223,21 @@ nav .menu .links ul li {
 
 nav .menu .links ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   text-transform: uppercase;
-  font-family: 'Michroma', sans-serif;
-  font-size: 12px;
+  /*font-family: 'Michroma', sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
   letter-spacing: 2px;
-  border-left: 1px solid grey;
+  border-left: 2px solid #313234;
   padding: 0 16px;
 }
 
 nav .menu .links ul li a:hover {
   color: #00c7e8;
   transition: color 0.4s;
-  border-left: 1px dashed grey;
+  border-left: 2px solid #313234;
 }
 
 nav .menu .logo {
@@ -248,17 +251,24 @@ nav .menu .logo img {
   margin-top: 10px;
   width: 180px;
   height: auto;
+  padding: 8px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .hero {
-  height: 350px;
+  height: 420px;
   background: url("../images/jumbotron.jpg");
   background-size: cover;
   background-position: 50%;
-  border-bottom: 1px solid black;
 }
 
-.hero .btn-primary.visit {
+.hero button {
+  width: 100%;
+  border-radius: 0;
+}
+
+.hero button .btn-primary.visit {
   position: relative;
   width: 150px;
   top: 150px;
@@ -269,10 +279,11 @@ nav .menu .logo img {
   border: 1px solid #000 !important;
 }
 
-.hero .btn-primary.visit:hover {
+.hero button .btn-primary.visit:hover {
   color: #fff !important;
   background: rgba(0, 0, 0, 0.8) !important;
   border: 1px solid #fff !important;
+  outline: none;
 }
 
 .hero .modal-header {
@@ -294,8 +305,8 @@ nav .menu .logo img {
 
 #onas {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 #onas .description {
@@ -304,7 +315,7 @@ nav .menu .logo img {
   margin: 0 auto;
 }
 
-#onas .description h3 {
+#onas .description h2 {
   text-transform: uppercase;
   color: #008dc9;
   padding-top: 10px;
@@ -314,7 +325,7 @@ nav .menu .logo img {
 #onas .description p {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 #onas .item {
@@ -359,7 +370,8 @@ footer p {
 @media (max-width: 767px) {
   nav .menu .links {
     float: none;
-    height: 100px;
+    height: 130px;
+    padding-top: 20px;
   }
   nav .menu .links ul {
     line-height: 30px;
@@ -369,6 +381,7 @@ footer p {
   }
   nav .menu .links ul li a {
     border-left: 0px;
+    border-right: 0px;
   }
   nav .menu .links ul li a:hover {
     border-left: 0px;
@@ -395,7 +408,6 @@ footer p {
   }
   #onas .item p {
     font-size: 16px;
-    color: gray;
     text-transform: uppercase;
   }
 }
