@@ -244,7 +244,7 @@ nav {
 		float: left;
 		text-align: center;
 		padding-bottom: 15px;
-		p.count-this {
+		.counter-value {
 			font-size: 40px;
 			color: #008dc9;
 		}
@@ -322,18 +322,13 @@ footer {
 
 		.description {
 			p {
-				/*width: 90%;*/
+				/* ... */
 			}
 		}
 		.item {
 			float: left;
 			width: 100%;
 			padding-bottom: 25px;
-			p.count-this {
-				font-size: 40px;
-				color: #008dc9;
-				width: 100%;
-			}
 			p {
 				font-size: 16px;
 				color: gray;

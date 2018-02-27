@@ -324,7 +324,7 @@ nav .menu .logo img {
   padding-bottom: 15px;
 }
 
-#onas .item p.count-this {
+#onas .item .counter-value {
   font-size: 40px;
   color: #008dc9;
 }
@@ -386,17 +386,12 @@ footer p {
     height: 100vh;
   }
   #onas .description p {
-    /*width: 90%;*/
+    /* ... */
   }
   #onas .item {
     float: left;
     width: 100%;
     padding-bottom: 25px;
-  }
-  #onas .item p.count-this {
-    font-size: 40px;
-    color: #008dc9;
-    width: 100%;
   }
   #onas .item p {
     font-size: 16px;
