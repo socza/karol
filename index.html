@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -23,9 +25,9 @@
 				</div>
 				<div class="links col-8">
 					<ul>
-						<li><a href="#">O nas</a></li>
-						<li><a href="#">Galeria</a></li>
-						<li><a href="#">Kontakt</a></li>
+						<li><a href="#onas">O nas</a></li>
+						<li><a href="#galeria">Galeria</a></li>
+						<li><a href="#kontakt">Kontakt</a></li>
 					<ul>
 				</div>
 			</div>
@@ -40,7 +42,7 @@
 	  				<div class="modal-dialog">
 	     				<div class="modal-content">
 							<div class="modal-header">
-	         					<h4>Zadzwoń do nas</h4>
+	         					<h3><i class='fa fa-phone faa-ring animated fa-2x'></i><span>&nbsp;&nbsp;&nbsp;601-057-603</span></h3>
 	       					</div>
 	       					<div class="modal-body">
 	       						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sequi, hic iure, laboriosam in sapiente obcaecati distinctio fuga. Nam in facilis facere quaerat repudiandae porro, dolore explicabo nisi atque nesciunt.</p>
@@ -54,8 +56,24 @@
 			</div>
 		</section>
 		
-		<section class="numbers">
-			
+		<section id="onas">
+			<div class="row container">
+				<div class="col-12 description">
+					<span>Opis</span>
+				</div>
+				<div class="col-4 item">
+					<span class="count-this">8</span><br>
+					<p>lat doświadczenia</p>
+				</div>
+				<div class="col-4 item">
+					<span class="count-this">67</span><br>
+					<p>zrealizowanych projektów</p>
+				</div>
+				<div class="col-4 item">
+					<span class="count-this">860</span><br>
+					<p>zadowolonych klientów</p>
+				</div>
+			</div>
 		</section>
 		
 		<section class="gallery">
@@ -66,6 +84,9 @@
 			</div>
 			<p>Copyright  2018</p>
 		</footer>
-		<script type="text/javascript" src="js/scripts.js"></script>
-	</body>
+	
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
 </html>

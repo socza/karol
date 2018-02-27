@@ -120,6 +120,54 @@ body {
   margin-left: 91.66%;
 }
 
+/* Phone */
+@keyframes ring {
+  0% {
+    transform: rotate(-15deg);
+  }
+  2% {
+    transform: rotate(15deg);
+  }
+  4% {
+    transform: rotate(-18deg);
+  }
+  6% {
+    transform: rotate(18deg);
+  }
+  8% {
+    transform: rotate(-22deg);
+  }
+  10% {
+    transform: rotate(22deg);
+  }
+  12% {
+    transform: rotate(-18deg);
+  }
+  14% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-12deg);
+  }
+  18% {
+    transform: rotate(12deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+}
+
+.faa-ring.animated {
+  animation: ring 2s ease infinite;
+  transform-origin-x: 50%;
+  transform-origin-y: 0px;
+  transform-origin-z: initial;
+  color: #008dc9;
+  float: left;
+  margin-left: 20px;
+}
+
+/* END PHONE */
 nav {
   background: linear-gradient(silver, white);
   height: 61px;
@@ -230,6 +278,45 @@ nav .menu .logo img {
   border: 1px solid #fff !important;
 }
 
+.hero .modal-header {
+  color: #008dc9;
+}
+
+.hero .modal-header span {
+  margin-top: 7px;
+  float: left;
+}
+
+.hero .modal-body {
+  /*color: #008dc9;*/
+}
+
+#onas {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+
+#onas .description {
+  color: gray;
+  height: 150px;
+  float: left;
+}
+
+#onas .item {
+  color: #008dc9;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 40px;
+}
+
+#onas .item p {
+  font-size: 16px;
+  color: gray;
+  margin: 5 auto;
+}
+
 footer {
   background-color: silver;
   text-align: center;
@@ -271,6 +358,16 @@ footer p {
     margin-top: 10px;
     width: 100%;
     text-align: center;
+  }
+  #onas {
+    text-align: center;
+    font-size: 30px;
+  }
+  #onas .item {
+    color: #008dc9;
+    margin-top: 60px;
+    display: block;
+    float: none;
   }
 }
 

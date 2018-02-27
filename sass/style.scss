@@ -54,6 +54,64 @@ body {
 .col-offest-10 {margin-left: 83.33%;}
 .col-offest-11 {margin-left: 91.66%;}
 
+/* Phone */
+@keyframes ring {
+	0% {
+		transform: rotate(-15deg);
+	}
+
+	2% {
+		transform: rotate(15deg);
+	}
+
+	4% {
+		transform: rotate(-18deg);
+	}
+
+	6% {
+		transform: rotate(18deg);
+	}
+
+	8% {
+		transform: rotate(-22deg);
+	}
+
+	10% {
+		transform: rotate(22deg);
+	}
+
+	12% {
+		transform: rotate(-18deg);
+	}
+
+	14% {
+		transform: rotate(18deg);
+	}
+
+	16% {
+		transform: rotate(-12deg);
+	}
+
+	18% {
+		transform: rotate(12deg);
+	}
+
+	20% {
+		transform: rotate(0deg);
+	}
+}
+
+.faa-ring.animated {
+	animation: ring 2s ease infinite;
+	transform-origin-x: 50%;
+	transform-origin-y: 0px;
+	transform-origin-z: initial;
+	color: #008dc9;	
+	float: left;
+	margin-left: 20px;
+}
+
+/* END PHONE */
 nav {
 	background: linear-gradient(silver, white);
 	height: 61px;
@@ -155,15 +213,57 @@ nav {
 		top: 140px;
 		left: calc(50% - 75px);
 		outline: none;
-  		color: #000 !important;
-  		background: rgba(255,255, 255, 0.8) !important; 
-  		border: 1px solid #000 !important;
+		color: #000 !important;
+		background: rgba(255,255, 255, 0.8) !important; 
+		border: 1px solid #000 !important;
 	}
 
 	.btn-primary.visit:hover {
 		color: #fff !important;
 		background: rgba(0, 0, 0, 0.8) !important;
 		border: 1px solid #fff !important;
+	}
+
+	
+	.modal-header {
+		color: #008dc9;
+		span {
+			margin-top: 7px;
+			float: left;
+		}
+	}
+
+	.modal-body {
+		/*color: #008dc9;*/
+	}
+
+	.modal-footer {
+
+	}
+}
+
+#onas {
+	text-align: center;
+	font-size: 40px;
+	margin: 30px;
+	
+	.description {
+		color: gray;
+		height: 150px;
+		float: left;
+	}
+	.item {
+		color: #008dc9;
+		display: block;
+		float: left;
+		text-align: center;
+		font-size: 40px;
+		
+		p {
+			font-size: 16px;
+			color: gray;
+			margin: 5 auto;
+		}
 	}
 }
 
@@ -231,6 +331,19 @@ footer {
 				width: 100%;
 				text-align: center;
 			}
+		}
+	}
+
+	#onas {
+		text-align: center;
+		font-size: 30px;
+		
+		.item {
+			color: #008dc9;
+			margin-top: 60px;
+			display: block;
+			float: none;
+			
 		}
 	}
 }
