@@ -293,28 +293,42 @@ nav .menu .logo img {
 
 #onas {
   text-align: center;
-  font-size: 40px;
-  margin: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #onas .description {
   color: gray;
-  height: 150px;
-  float: left;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#onas .description h3 {
+  text-transform: uppercase;
+  color: #008dc9;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#onas .description p {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 #onas .item {
-  color: #008dc9;
   display: block;
   float: left;
-  text-align: center;
+}
+
+#onas .item .count-this {
   font-size: 40px;
+  color: #008dc9;
 }
 
 #onas .item p {
   font-size: 16px;
   color: gray;
-  margin: 5 auto;
 }
 
 footer {
@@ -359,14 +373,10 @@ footer p {
     width: 100%;
     text-align: center;
   }
-  #onas {
-    text-align: center;
-    font-size: 30px;
+  #onas .description p {
+    /*width: 90%;*/
   }
   #onas .item {
-    color: #008dc9;
-    margin-top: 60px;
-    display: block;
     float: none;
   }
 }

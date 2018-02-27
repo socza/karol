@@ -110,8 +110,8 @@ body {
 	float: left;
 	margin-left: 20px;
 }
-
 /* END PHONE */
+
 nav {
 	background: linear-gradient(silver, white);
 	height: 61px;
@@ -244,25 +244,40 @@ nav {
 
 #onas {
 	text-align: center;
-	font-size: 40px;
-	margin: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	
 	.description {
 		color: gray;
-		height: 150px;
-		float: left;
+		text-align: center;
+		margin: 0 auto;
+		
+		h3 {
+			text-transform: uppercase;
+			color: #008dc9;
+			padding-top: 10px;
+			padding-bottom: 20px;
+		}
+		
+		p {
+			width: 90%;
+			margin: 0 auto;
+			padding-bottom: 15px;
+		}
 	}
+
 	.item {
-		color: #008dc9;
 		display: block;
 		float: left;
-		text-align: center;
-		font-size: 40px;
+		
+		.count-this {
+			font-size: 40px;
+			color: #008dc9;
+		}
 		
 		p {
 			font-size: 16px;
 			color: gray;
-			margin: 5 auto;
 		}
 	}
 }
@@ -299,32 +314,24 @@ footer {
 
 /*urządzenia bardzo małe (telefony)*/
 @media (max-width: 767px) {
-
 	nav {
-		
 		.menu {
-			
 			.links {
 				float: none;
 				height: 100px;
-				
 				ul {
 					line-height: 30px;
-					
 					li {
 					display: block;
-					
 						a {
 							border-left: 0px;
 						}
-
 						a:hover {
 							border-left: 0px;
 						}
 					}	
 				}
 			}
-		
 			.logo {
 				float: none;
 				margin-top: 10px;
@@ -333,17 +340,14 @@ footer {
 			}
 		}
 	}
-
 	#onas {
-		text-align: center;
-		font-size: 30px;
-		
+		.description {
+			p {
+				/*width: 90%;*/
+			}
+		}
 		.item {
-			color: #008dc9;
-			margin-top: 60px;
-			display: block;
 			float: none;
-			
 		}
 	}
 }

@@ -6,7 +6,7 @@ $('.count-this').each(function () {
       Counter: $(this).text()
   }, {
       // Speed of counter in ms, default animation style
-      duration: 3000,
+      duration: 6000,
       // Easing function
       easing: 'swing',
       step: function (now) {
