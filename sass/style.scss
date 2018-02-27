@@ -120,38 +120,28 @@ nav {
 	display: table;
 	clear: both;
 	border-bottom: 1px solid black;
-	
 	.languages {
 		width: 100%;
 		height: 26px;
-		/*border-top: 1px solid black;*/
-		/*border-bottom: 1px solid black;*/
 		background-color: gray;
-		/*box-shadow: 0 0 5px black;*/
-		
 		a {
 			display: block;
 			float: right;
 			padding: 1px 15px;
-		
 			img {
 				/*border-radius: 3px;*/
 				/*box-shadow: 0 0 8px black;*/
 			}
-			
 			img:hover {
 				box-shadow: 0 0 8px white;
 			}
 		}
 	}
-
 	.menu {
-		
 		.links {
 			display: block;
 			float: left;
 			height: 61px;
-			
 			ul {
 				display: block;
 				float: left;
@@ -160,11 +150,9 @@ nav {
 				padding: 0;
 				line-height: 72px;
 				text-align: center;
-
 				li {
 				display: inline-block;
 				padding: 0 20px;
-
 					a {
 						text-decoration: none;
 						color: black;
@@ -175,7 +163,6 @@ nav {
 						border-left: 1px solid grey;
 						padding: 0 16px;
 					}
-
 					a:hover {
 						color: #00c7e8;
 						transition: color 0.4s;
@@ -184,13 +171,11 @@ nav {
 				}	
 			}
 		}
-	
 		.logo {
 			display: block;
 			float: right;
 			text-align: left;
 			height: 70px;
-			
 			img {
 				margin-top: 10px;
 				width: 180px;
@@ -199,32 +184,27 @@ nav {
 		}
 	}
 }
-
 .hero {
-	height: 320px;
+	height: 350px;
 	background: url('../images/jumbotron.jpg');
 	background-size: cover;
 	background-position: 50%;
 	border-bottom: 1px solid black;
-
 	.btn-primary.visit { 
 		position: relative;
 		width: 150px;
-		top: 140px;
+		top: 150px;
 		left: calc(50% - 75px);
 		outline: none;
 		color: #000 !important;
 		background: rgba(255,255, 255, 0.8) !important; 
 		border: 1px solid #000 !important;
 	}
-
 	.btn-primary.visit:hover {
 		color: #fff !important;
 		background: rgba(0, 0, 0, 0.8) !important;
 		border: 1px solid #fff !important;
 	}
-
-	
 	.modal-header {
 		color: #008dc9;
 		span {
@@ -232,62 +212,56 @@ nav {
 			float: left;
 		}
 	}
-
 	.modal-body {
 		/*color: #008dc9;*/
 	}
-
 	.modal-footer {
-
+		/* ... */
 	}
 }
-
 #onas {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	
 	.description {
 		color: gray;
 		text-align: center;
 		margin: 0 auto;
-		
 		h3 {
 			text-transform: uppercase;
 			color: #008dc9;
 			padding-top: 10px;
 			padding-bottom: 20px;
 		}
-		
 		p {
 			width: 90%;
 			margin: 0 auto;
 			padding-bottom: 15px;
 		}
 	}
-
 	.item {
 		display: block;
 		float: left;
-		
-		.count-this {
+		text-align: center;
+		padding-bottom: 15px;
+		p.count-this {
 			font-size: 40px;
 			color: #008dc9;
 		}
-		
 		p {
-			font-size: 16px;
+			font-size: 15px;
 			color: gray;
+			text-transform: uppercase;
+			width: 150px;
+			margin: 0 auto;
 		}
 	}
 }
-
 footer {
 	background-color: silver;
 	text-align: center;
 	clear: both;
 	height: 40px;
-		
 	p {
 		margin: 0;
 		padding: 10px;
@@ -340,14 +314,31 @@ footer {
 			}
 		}
 	}
+	.hero {
+		height: 320px;
+	}
 	#onas {
+		height: 100vh;
+
 		.description {
 			p {
 				/*width: 90%;*/
 			}
 		}
 		.item {
-			float: none;
+			float: left;
+			width: 100%;
+			padding-bottom: 25px;
+			p.count-this {
+				font-size: 40px;
+				color: #008dc9;
+				width: 100%;
+			}
+			p {
+				font-size: 16px;
+				color: gray;
+				text-transform: uppercase;
+			}
 		}
 	}
 }
