@@ -11,6 +11,12 @@ body {
 	margin: 0;
 }
 
+body.modal-open {
+            padding: 0 !important;
+            overflow-y: scroll;
+            /*position: fixed;*/
+        }
+
 .container {
 	width: 100%;
 	max-width: 1200px;
@@ -119,7 +125,7 @@ nav {
 	width: 100%;
 	content: "";
 	display: table;
-	clear: both;
+	position: fixed;
 	.languages {
 		width: 100%;
 		height: 26px;
@@ -157,7 +163,6 @@ nav {
 						text-decoration: none;
 						color: white;
 						text-transform: uppercase;
-						/*font-family: 'Michroma', sans-serif;*/
 						font-family: 'Josefin Sans', sans-serif;
 						font-size: 16px;
 						font-weight: bold;
@@ -190,27 +195,23 @@ nav {
 	}
 }
 .hero {
-	height: 420px;
+	height: 76vh;
 	background: url('../images/jumbotron.jpg');
 	background-size: cover;
 	background-position: 50%;
-	button {
-		width: 100%;
-		border-radius: 0;
+	.callme {
+		padding-top: 111px;
 		.btn-primary.visit {
-			position: relative;
-			width: 150px;
-			top: 150px;
-			left: calc(50% - 75px);
-			outline: none;
-			color: #000 !important;
-			background: rgba(255,255, 255, 0.8) !important; 
-			border: 1px solid #000 !important;
+			width: 100%;
+			border-radius: 0;
+			/*color: #000 !important;*/
+			/*background: rgba(255,255, 255, 0.8) !important; */
+			/*border: 1px solid #000 !important;*/
 		}
 		.btn-primary.visit:hover {
-			color: #fff !important;
-			background: rgba(0, 0, 0, 0.8) !important;
-			border: 1px solid #fff !important;outline: none;
+			/*background-color: #008dc9 !important;*/
+			/*background: rgba(0, 0, 0, 0.8) !important;*/
+			/*border: 1px solid #fff !important;outline: none;*/
 		}
 	}
 	
@@ -230,8 +231,8 @@ nav {
 }
 #onas {
 	text-align: center;
-	margin-top: 35px;
-	margin-bottom: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	.description {
 		color: gray;
 		text-align: center;
@@ -239,13 +240,14 @@ nav {
 		h2 {
 			text-transform: uppercase;
 			color: #008dc9;
-			padding-top: 10px;
+			padding-top: 20px;
 			padding-bottom: 20px;
 		}
 		p {
-			width: 90%;
+			width: 100%;
 			margin: 0 auto;
-			padding-bottom: 40px;
+			font-size: 18px;
+			padding-bottom: 25px;
 		}
 	}
 	.item {
@@ -253,7 +255,7 @@ nav {
 		float: left;
 		text-align: center;
 		padding-bottom: 15px;
-		.counter-value {
+		.counter {
 			font-size: 40px;
 			color: #008dc9;
 		}
@@ -298,6 +300,7 @@ footer {
 /*urządzenia bardzo małe (telefony)*/
 @media (max-width: 767px) {
 	nav {
+		position: static;
 		.menu {
 			.links {
 				float: none;
@@ -326,19 +329,39 @@ footer {
 		}
 	}
 	.hero {
-		height: 320px;
+		height: 50vh;;
+		.callme {
+		padding-top: 0px;
+		.btn-primary.visit {
+			width: 100%;
+			border-radius: 0;
+			/*color: #000 !important;*/
+			/*background: rgba(255,255, 255, 0.8) !important; */
+			/*border: 1px solid #000 !important;*/
+		}
+		.btn-primary.visit:hover {
+			/*background-color: #008dc9 !important;*/
+			/*background: rgba(0, 0, 0, 0.8) !important;*/
+			/*border: 1px solid #fff !important;outline: none;*/
+		}
+	}
 	}
 	#onas {
 		height: 100vh;
+		margin-top: 23px;
+		margin-bottom: 30px;
 		.description {
 			p {
-				/* ... */
+			width: 95%;
+			margin: 0 auto;
+			font-size: 16px;
+			padding-bottom: 10px;
 			}
 		}
 		.item {
 			float: left;
 			width: 100%;
-			padding-bottom: 25px;
+			padding-bottom: 15px;
 			p {
 				font-size: 16px;
 				text-transform: uppercase;
