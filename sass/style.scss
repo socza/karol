@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
-@import url('https://fonts.googleapis.com/css?family=Michroma');
+/*@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Michroma');*/
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 * {
@@ -126,6 +126,7 @@ nav {
 	content: "";
 	display: table;
 	position: fixed;
+	z-index: 1;
 	.languages {
 		width: 100%;
 		height: 26px;
@@ -154,7 +155,7 @@ nav {
 				width: 100%;
 				margin: 0 auto;
 				padding: 0;
-				line-height: 90px;
+				line-height: 85px;
 				text-align: center;
 				li {
 				display: inline-block;
@@ -184,8 +185,8 @@ nav {
 			text-align: left;
 			height: 70px;
 			img {
-				margin-top: 10px;
-				width: 180px;
+				margin-top: 12px;
+				width: 170px;
 				height: auto;
 				padding: 8px;
 				background-color: white;
@@ -195,10 +196,11 @@ nav {
 	}
 }
 .hero {
+	z-index: 0;
 	height: 76vh;
 	background: url('../images/jumbotron.jpg');
 	background-size: cover;
-	background-position: 50%;
+	/*background-position: 0%;*/
 	.callme {
 		padding-top: 111px;
 		.btn-primary.visit {
@@ -304,8 +306,7 @@ footer {
 		.menu {
 			.links {
 				float: none;
-				height: 130px;
-				padding-top: 20px;
+				height: 100px;
 				ul {
 					line-height: 30px;
 					li {
@@ -322,29 +323,32 @@ footer {
 			}
 			.logo {
 				float: none;
-				margin-top: 10px;
+				margin-bottom: -5px;
 				width: 100%;
 				text-align: center;
+				img {
+					width: 120px;
+				}
 			}
 		}
 	}
 	.hero {
-		height: 50vh;;
+		height: 52vh;;
 		.callme {
-		padding-top: 0px;
-		.btn-primary.visit {
-			width: 100%;
-			border-radius: 0;
-			/*color: #000 !important;*/
-			/*background: rgba(255,255, 255, 0.8) !important; */
-			/*border: 1px solid #000 !important;*/
+			padding-top: 0px;
+			.btn-primary.visit {
+				/*width: 100%;*/
+				/*border-radius: 0;*/
+				/*color: #000 !important;*/
+				/*background: rgba(255,255, 255, 0.8) !important; */
+				/*border: 1px solid #000 !important;*/
+			}
+			.btn-primary.visit:hover {
+				/*background-color: #008dc9 !important;*/
+				/*background: rgba(0, 0, 0, 0.8) !important;*/
+				/*border: 1px solid #fff !important;outline: none;*/
+			}
 		}
-		.btn-primary.visit:hover {
-			/*background-color: #008dc9 !important;*/
-			/*background: rgba(0, 0, 0, 0.8) !important;*/
-			/*border: 1px solid #fff !important;outline: none;*/
-		}
-	}
 	}
 	#onas {
 		height: 100vh;

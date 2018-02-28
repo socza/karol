@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
-@import url("https://fonts.googleapis.com/css?family=Michroma");
+/*@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Michroma');*/
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 * {
   box-sizing: border-box;
@@ -183,6 +183,7 @@ nav {
   content: "";
   display: table;
   position: fixed;
+  z-index: 1;
 }
 
 nav .languages {
@@ -218,7 +219,7 @@ nav .menu .links ul {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  line-height: 90px;
+  line-height: 85px;
   text-align: center;
 }
 
@@ -253,8 +254,8 @@ nav .menu .logo {
 }
 
 nav .menu .logo img {
-  margin-top: 10px;
-  width: 180px;
+  margin-top: 12px;
+  width: 170px;
   height: auto;
   padding: 8px;
   background-color: white;
@@ -262,10 +263,11 @@ nav .menu .logo img {
 }
 
 .hero {
+  z-index: 0;
   height: 76vh;
   background: url("../images/jumbotron.jpg");
   background-size: cover;
-  background-position: 50%;
+  /*background-position: 0%;*/
 }
 
 .hero .callme {
@@ -374,8 +376,7 @@ footer p {
   }
   nav .menu .links {
     float: none;
-    height: 130px;
-    padding-top: 20px;
+    height: 100px;
   }
   nav .menu .links ul {
     line-height: 30px;
@@ -392,19 +393,22 @@ footer p {
   }
   nav .menu .logo {
     float: none;
-    margin-top: 10px;
+    margin-bottom: -5px;
     width: 100%;
     text-align: center;
   }
+  nav .menu .logo img {
+    width: 120px;
+  }
   .hero {
-    height: 50vh;
+    height: 52vh;
   }
   .hero .callme {
     padding-top: 0px;
   }
   .hero .callme .btn-primary.visit {
-    width: 100%;
-    border-radius: 0;
+    /*width: 100%;*/
+    /*border-radius: 0;*/
     /*color: #000 !important;*/
     /*background: rgba(255,255, 255, 0.8) !important; */
     /*border: 1px solid #000 !important;*/
