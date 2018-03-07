@@ -196,8 +196,7 @@ nav {
 	}
 }
 .hero {
-	z-index: 0;
-	height: 72vh;
+	height: 101vh;
 	background: url('../images/jumbotron.jpg');
 	background-size: cover;
 	.callMe {
@@ -208,26 +207,27 @@ nav {
 			height: 40px;
 			width: 100%;
 			border-radius: 0;
-		}
-		.btn-primary.visit:active {
+			border: 0;
 			outline: none;
 		}
+		.btn-primary.visit:hover {
+			border-radius: 0;
+			height: 40px;
+			border: 0;
+		}
 	}
-	#visit {
-		padding: 0;
-		.modal-header {
-			color: #008dc9;
-			span {
-				margin-top: 7px;
-				float: left;
-			}
+	.modal-header {
+		color: #008dc9;
+		span {
+			margin-top: 7px;
+			float: left;
 		}
-		.modal-body {
-			/* ... */
-		}
-		.modal-footer {
-			/* ... */
-		}
+	}
+	.modal-body {
+		/* ... */
+	}
+	.modal-footer {
+		/* ... */
 	}
 	.animate-text {
 		position: relative;
@@ -254,7 +254,7 @@ nav {
 #onas {
 	text-align: center;
 	margin-top: 60px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	.description {
 		color: gray;
 		text-align: center;
@@ -262,8 +262,8 @@ nav {
 		h2 {
 			text-transform: uppercase;
 			color: #008dc9;
-			padding-top: 30px;
-			padding-bottom: 20px;
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 		p {
 			width: 100%;
@@ -365,7 +365,7 @@ footer {
 		}
 	}
 	.hero {
-		height: 45vh;
+		height: 84vh;
 		.callMe {
 			
 			.btn-primary.visit {
@@ -378,18 +378,18 @@ footer {
 		.animate-text {
 			color: white;
 			text-align: center;
-			margin-top: 130px;
+			margin-top: 170px;
 			text-shadow: 1px 1px 1px black;
 			.rotating-item-one{
 				display: none;
 				position: absolute;
-				font-size: 30px;
+				font-size: 40px;
 			}	
 			.rotating-item-two {
 				display: none;
 				float: left;
 				position: absolute;
-				margin-top: -30px;
+				margin-top: -20px;
 				font-size: 16px;
 			}
 		}
@@ -428,9 +428,11 @@ footer {
 					line-height: 30px;
 					li {
 					display: block;
+					padding: 7px;
 						a {
 							border-left: 0px;
 							border-right: 0px;
+							font-size: 120%;
 						}
 						a:hover {
 							border-left: 0px;
@@ -450,7 +452,7 @@ footer {
 		}
 	}
 	.hero {
-		height: 45vh;
+		height: 100vh;
 		.callMe {
 			/* ... */
 			.btn-primary.visit {
@@ -515,9 +517,11 @@ footer {
 					line-height: 30px;
 					li {
 					display: block;
+					padding: 7px;
 						a {
 							border-left: 0px;
 							border-right: 0px;
+							font-size: 120%;
 						}
 						a:hover {
 							border-left: 0px;
@@ -537,26 +541,30 @@ footer {
 		}
 	}
 	.hero {
-		height: 57vh;;
+		height: 67vh;
 		.callMe {
 			/* ... */
-			.btn-primary.visit {
+			button.btn-primary.visit {
 				margin-top: 0px;
 			}
+			.btn-primary.visit:active {
+				
+			}
 			.btn-primary.visit:hover {
-				/* ... */
+				
 			}
 		}
 		.animate-text {
 			color: white;
 			text-align: center;
-			margin-top: 100px;
+			margin-top: 130px;
 			text-shadow: 1px 1px 1px black ;
 
 			.rotating-item-one{
 				display: none;
 				position: absolute;
 				font-size: 25px;
+				padding: 0 35px;
 			}	
 			.rotating-item-two {
 				display: none;
@@ -564,7 +572,7 @@ footer {
 				position: absolute;
 				top: 70px;
 				font-size: 12px;
-				padding: 0 15px;
+				padding: 0 35px;
 			}
 		}
 	}
