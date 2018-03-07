@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Rammetto+One");
+@import url("https://fonts.googleapis.com/css?family=Coiny|Rammetto+One");
 * {
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
@@ -262,7 +264,7 @@ nav .menu .logo img {
 
 .hero {
   z-index: 0;
-  height: 76vh;
+  height: 72vh;
   background: url("../images/jumbotron.jpg");
   background-size: cover;
 }
@@ -274,56 +276,64 @@ nav .menu .logo img {
 .hero .callMe .btn-primary.visit {
   margin-top: 111px;
   padding: 0;
-  height: 30px;
+  height: 40px;
   width: 100%;
   border-radius: 0;
 }
 
-.hero .callMe .btn-primary.visit:hover {
-  /* ... */
+.hero .callMe .btn-primary.visit:active {
+  outline: none;
 }
 
-.hero .modal-header {
+.hero #visit {
+  padding: 0;
+}
+
+.hero #visit .modal-header {
   color: #008dc9;
 }
 
-.hero .modal-header span {
+.hero #visit .modal-header span {
   margin-top: 7px;
   float: left;
 }
 
-.hero .modal-body {
+.hero #visit .modal-body {
   /* ... */
 }
 
-.hero .modal-footer {
+.hero #visit .modal-footer {
   /* ... */
 }
 
 .hero .animate-text {
+  position: relative;
   color: white;
   text-align: center;
-  margin-top: 140px;
+  margin-top: 170px;
   text-shadow: 1px 1px 3px black;
   width: 100%;
 }
 
-.hero .animate-text .rotating-item-left {
+.hero .animate-text .rotating-item-one {
   display: none;
   position: absolute;
-  font-size: 35px;
+  font-size: 40px;
+  font-family: 'Rammetto One', cursive;
 }
 
-.hero .animate-text .rotating-item-right {
+.hero .animate-text .rotating-item-two {
   display: none;
   position: absolute;
-  margin-top: 50px;
+  padding-top: 110px;
+  font-size: 20px;
+  font-family: 'Rammetto One', cursive;
 }
 
 #onas {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 #onas .description {
@@ -335,7 +345,7 @@ nav .menu .logo img {
 #onas .description h2 {
   text-transform: uppercase;
   color: #008dc9;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
@@ -343,7 +353,7 @@ nav .menu .logo img {
   width: 100%;
   margin: 0 auto;
   font-size: 18px;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 #onas .item {
@@ -383,7 +393,188 @@ footer p {
 /*MEDIA*/
 /*urządzenia duże (desktopy, monitory, tv)*/
 /*urządzenia średnie*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  nav {
+    position: static;
+  }
+  nav menu .links {
+    display: block;
+    float: left;
+    height: 85px;
+  }
+  nav menu .links ul {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 85px;
+    text-align: center;
+  }
+  nav menu .links ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  nav menu .links ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-left: 1px solid #313234;
+    padding: 0 16px;
+  }
+  nav menu .links ul li a:hover {
+    /*color: #00c7e8;*/
+    transition: color 0.4s;
+    border-left: 1px solid #313234;
+  }
+  nav menu .logo {
+    display: block;
+    float: right;
+    text-align: left;
+    height: 70px;
+  }
+  nav menu .logo img {
+    margin-top: 16px;
+    width: 150px;
+    height: auto;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .hero {
+    height: 45vh;
+  }
+  .hero .callMe .btn-primary.visit {
+    margin-top: 0px;
+  }
+  .hero .callMe .btn-primary.visit:hover {
+    /* ... */
+  }
+  .hero .animate-text {
+    color: white;
+    text-align: center;
+    margin-top: 130px;
+    text-shadow: 1px 1px 1px black;
+  }
+  .hero .animate-text .rotating-item-one {
+    display: none;
+    position: absolute;
+    font-size: 30px;
+  }
+  .hero .animate-text .rotating-item-two {
+    display: none;
+    float: left;
+    position: absolute;
+    margin-top: -30px;
+    font-size: 16px;
+  }
+  #onas {
+    height: 100vh;
+    margin-top: 23px;
+    margin-bottom: 30px;
+  }
+  #onas .description p {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  #onas .item {
+    padding-bottom: 15px;
+  }
+  #onas .item p {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
 /*urządzenia małe (tablety)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  nav {
+    position: static;
+  }
+  nav .menu .links {
+    float: none;
+    height: 100px;
+  }
+  nav .menu .links ul {
+    line-height: 30px;
+  }
+  nav .menu .links ul li {
+    display: block;
+  }
+  nav .menu .links ul li a {
+    border-left: 0px;
+    border-right: 0px;
+  }
+  nav .menu .links ul li a:hover {
+    border-left: 0px;
+  }
+  nav .menu .logo {
+    float: none;
+    margin-bottom: -5px;
+    width: 100%;
+    text-align: center;
+  }
+  nav .menu .logo img {
+    width: 120px;
+  }
+  .hero {
+    height: 45vh;
+  }
+  .hero .callMe {
+    /* ... */
+  }
+  .hero .callMe .btn-primary.visit {
+    margin-top: 0px;
+  }
+  .hero .callMe .btn-primary.visit:hover {
+    /* ... */
+  }
+  .hero .animate-text {
+    color: white;
+    text-align: center;
+    margin-top: 140px;
+    text-shadow: 1px 1px 1px black;
+  }
+  .hero .animate-text .rotating-item-one {
+    display: none;
+    position: absolute;
+    font-size: 30px;
+  }
+  .hero .animate-text .rotating-item-two {
+    display: none;
+    float: left;
+    position: absolute;
+    margin-top: -30px;
+    font-size: 16px;
+  }
+  #onas {
+    height: 100vh;
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+  #onas .description p {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+  #onas .item {
+    float: left;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  #onas .item p {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
 /*urządzenia bardzo małe (telefony)*/
 @media (max-width: 767px) {
   nav {
@@ -416,7 +607,10 @@ footer p {
     width: 120px;
   }
   .hero {
-    height: 52vh;
+    height: 57vh;
+  }
+  .hero .callMe {
+    /* ... */
   }
   .hero .callMe .btn-primary.visit {
     margin-top: 0px;
@@ -428,21 +622,20 @@ footer p {
     color: white;
     text-align: center;
     margin-top: 100px;
-    text-shadow: 1px 1px 3px black;
-    width: 100%;
+    text-shadow: 1px 1px 1px black;
   }
-  .hero .animate-text .rotating-item-left {
+  .hero .animate-text .rotating-item-one {
     display: none;
     position: absolute;
-    font-size: 35px;
-    width: 100%;
+    font-size: 25px;
   }
-  .hero .animate-text .rotating-item-right {
+  .hero .animate-text .rotating-item-two {
     display: none;
+    float: left;
     position: absolute;
-    top: 160px;
-    width: 100%;
-    text-align: right;
+    top: 70px;
+    font-size: 12px;
+    padding: 0 15px;
   }
   #onas {
     height: 100vh;

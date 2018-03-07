@@ -1,11 +1,11 @@
 $(window).load(function() {	//start after HTML, images have loaded
 
-	var InfiniteRotatorLeft = 
+	var InfiniteRotatorOne = 
 	{
 		init: function()
 		{
 			//initial fade-in time (in milliseconds)
-			var initialFadeIn = 1000;
+			var initialFadeIn = 0;
 			
 			//interval between items (in milliseconds)
 			var itemInterval = 4000;
@@ -14,41 +14,41 @@ $(window).load(function() {	//start after HTML, images have loaded
 			var fadeTime = 0;
 			
 			//count number of items
-			var numberOfItems = $('.rotating-item-left').length;
+			var numberOfItems = $('.rotating-item-one').length;
 
 			//set current item
 			var currentItem = 0;
 
 			//show first item
-			$('.rotating-item-left').eq(currentItem).fadeIn(initialFadeIn);
+			$('.rotating-item-one').eq(currentItem).fadeIn(initialFadeIn);
 
 			//loop through the items		
 			var infiniteLoop = setInterval(function(){
-				$('.rotating-item-left').eq(currentItem).fadeOut(fadeTime);
+				$('.rotating-item-one').eq(currentItem).fadeOut(fadeTime);
 
 				if(currentItem == numberOfItems -1){
 					currentItem = 0;
 				}else{
 					currentItem++;
 				}
-				$('.rotating-item-left').eq(currentItem).fadeIn(fadeTime);
+				$('.rotating-item-one').eq(currentItem).fadeIn(fadeTime);
 
 			}, itemInterval);	
 		}	
 	};
 
-	InfiniteRotatorLeft.init();
+	InfiniteRotatorOne.init();
 	
 });
 
 $(window).load(function() {	//start after HTML, images have loaded
 
-	var InfiniteRotatorRight = 
+	var InfiniteRotatorTwo = 
 	{
 		init: function()
 		{
 			//initial fade-in time (in milliseconds)
-			var initialFadeIn = 1000;
+			var initialFadeIn = 0;
 			
 			//interval between items (in milliseconds)
 			var itemInterval = 4000;
@@ -57,29 +57,29 @@ $(window).load(function() {	//start after HTML, images have loaded
 			var fadeTime = 0;
 			
 			//count number of items
-			var numberOfItems = $('.rotating-item-right').length;
+			var numberOfItems = $('.rotating-item-two').length;
 
 			//set current item
 			var currentItem = 0;
 
 			//show first item
-			$('.rotating-item-right').eq(currentItem).fadeIn(initialFadeIn);
+			$('.rotating-item-two').eq(currentItem).fadeIn(initialFadeIn);
 
 			//loop through the items		
 			var infiniteLoop = setInterval(function(){
-				$('.rotating-item-right').eq(currentItem).fadeOut(fadeTime);
+				$('.rotating-item-two').eq(currentItem).fadeOut(fadeTime);
 
 				if(currentItem == numberOfItems -1){
 					currentItem = 0;
 				}else{
 					currentItem++;
 				}
-				$('.rotating-item-right').eq(currentItem).fadeIn(fadeTime);
+				$('.rotating-item-two').eq(currentItem).fadeIn(fadeTime);
 
 			}, itemInterval);	
 		}	
 	};
 
-	InfiniteRotatorRight.init();
+	InfiniteRotatorTwo.init();
 	
 });
