@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-@import url("https://fonts.googleapis.com/css?family=Rammetto+One");
 @import url("https://fonts.googleapis.com/css?family=Coiny|Rammetto+One");
 * {
   box-sizing: border-box;
@@ -15,7 +14,6 @@ body {
 body.modal-open {
   padding: 0 !important;
   overflow-y: scroll;
-  /*position: fixed;*/
 }
 
 .container {
@@ -24,7 +22,7 @@ body.modal-open {
   margin: 0 auto;
 }
 
-/* grids */
+/* START GRID */
 .row:before,
 .row:after {
   content: "";
@@ -129,7 +127,8 @@ body.modal-open {
   margin-left: 91.66%;
 }
 
-/* Phone */
+/* END GRID */
+/* START PHONE */
 @keyframes ring {
   0% {
     transform: rotate(-15deg);
@@ -177,6 +176,7 @@ body.modal-open {
 }
 
 /* END PHONE */
+/* --- MAIN BODY --- */
 nav {
   background: #404040;
   height: 91px;
@@ -185,6 +185,7 @@ nav {
   display: table;
   position: fixed;
   z-index: 1;
+  box-shadow: 0px 3px 5px;
 }
 
 nav .languages {
@@ -197,10 +198,6 @@ nav .languages a {
   display: block;
   float: right;
   padding: 3px 15px;
-}
-
-nav .languages a img {
-  /* ... */
 }
 
 nav .languages a img:hover {
@@ -219,7 +216,7 @@ nav .menu .links ul {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  line-height: 85px;
+  line-height: 92px;
   text-align: center;
 }
 
@@ -233,17 +230,11 @@ nav .menu .links ul li a {
   color: white;
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 2px;
   border-left: 1px solid #313234;
   padding: 0 16px;
-}
-
-nav .menu .links ul li a:hover {
-  /*color: #00c7e8;*/
-  transition: color 0.4s;
-  border-left: 1px solid #313234;
 }
 
 nav .menu .logo {
@@ -263,17 +254,17 @@ nav .menu .logo img {
 }
 
 .hero {
-  height: 101vh;
+  height: 78vh;
   background: url("../images/jumbotron.jpg");
   background-size: cover;
 }
 
-.hero .callMe {
+.hero .callme {
   margin-top: 0px;
 }
 
-.hero .callMe .btn-primary.visit {
-  margin-top: 111px;
+.hero .callme .btn-primary.visit {
+  margin-top: 112px;
   padding: 0;
   height: 40px;
   width: 100%;
@@ -283,11 +274,13 @@ nav .menu .logo img {
   background-color: #286090;
 }
 
-.hero .callMe .btn-primary.visit p {
+.hero .callme .btn-primary.visit p {
   padding-top: 10px;
+  margin: 0;
+  height: 40px;
 }
 
-.hero .callMe .btn-primary.visit:hover {
+.hero .callme .btn-primary.visit:hover {
   border-radius: 0;
   height: 40px;
   border: 0;
@@ -302,39 +295,33 @@ nav .menu .logo img {
   float: left;
 }
 
-.hero .modal-body {
-  /* ... */
-}
-
-.hero .modal-footer {
-  /* ... */
-}
-
 .hero .animate-text {
   position: relative;
   color: white;
   text-align: center;
-  margin-top: 170px;
   text-shadow: 1px 1px 3px black;
-  width: 100%;
+  height: calc(76.7%);
 }
 
 .hero .animate-text .rotating-item-one {
-  display: none;
   position: absolute;
-  font-size: 40px;
+  display: none;
+  top: calc(35% + 0px);
+  font-size: 43px;
   font-family: 'Rammetto One', cursive;
 }
 
 .hero .animate-text .rotating-item-two {
-  display: none;
   position: absolute;
-  padding-top: 110px;
-  font-size: 20px;
+  display: none;
+  top: calc(50% + 20px);
+  padding: 0 7px;
+  font-size: 25px;
   font-family: 'Rammetto One', cursive;
 }
 
 #onas {
+  height: 70vh;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 80px;
@@ -394,220 +381,110 @@ footer p {
   text-shadow: 0 0 1px black;
 }
 
-/*MEDIA*/
-/*urządzenia duże (desktopy, monitory, tv)*/
-/*urządzenia średnie*/
+/* MEDIA QUERIES 
+/* -------------------------------------------
+/* urządzenia duże (desktopy, monitory, tv) */
+/* urządzenia średnie */
 @media (min-width: 992px) and (max-width: 1199px) {
-  nav {
-    position: static;
-  }
-  nav menu .links {
-    display: block;
-    float: left;
-    height: 85px;
-  }
-  nav menu .links ul {
-    display: block;
-    float: left;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    line-height: 85px;
-    text-align: center;
-  }
-  nav menu .links ul li {
-    display: inline-block;
-    padding: 0 20px;
-  }
-  nav menu .links ul li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border-left: 1px solid #313234;
-    padding: 0 16px;
-  }
-  nav menu .links ul li a:hover {
-    /*color: #00c7e8;*/
-    transition: color 0.4s;
-    border-left: 1px solid #313234;
-  }
-  nav menu .logo {
-    display: block;
-    float: right;
-    text-align: left;
-    height: 70px;
-  }
-  nav menu .logo img {
-    margin-top: 16px;
-    width: 150px;
-    height: auto;
-    padding: 8px;
-    background-color: white;
-    border-radius: 5px;
-  }
   .hero {
-    height: 84vh;
-  }
-  .hero .callMe .btn-primary.visit {
-    margin-top: 0px;
-  }
-  .hero .callMe .btn-primary.visit:hover {
-    /* ... */
+    height: 78vh;
   }
   .hero .animate-text {
-    color: white;
-    text-align: center;
-    margin-top: 170px;
-    text-shadow: 1px 1px 1px black;
+    height: calc(100% - 23.3%);
   }
   .hero .animate-text .rotating-item-one {
-    display: none;
-    position: absolute;
-    font-size: 40px;
+    font-size: 35px;
   }
   .hero .animate-text .rotating-item-two {
-    display: none;
-    float: left;
-    position: absolute;
-    margin-top: -20px;
-    font-size: 16px;
-  }
-  #onas {
-    height: 100vh;
-    margin-top: 23px;
-    margin-bottom: 30px;
-  }
-  #onas .description p {
-    width: 95%;
-    margin: 0 auto;
-    font-size: 16px;
-    padding-bottom: 10px;
-  }
-  #onas .item {
-    padding-bottom: 15px;
-  }
-  #onas .item p {
-    font-size: 16px;
-    text-transform: uppercase;
+    font-size: 18px;
   }
 }
 
-/*urządzenia małe (tablety)*/
+/* urządzenia małe (tablety) */
 @media (min-width: 768px) and (max-width: 991px) {
   nav {
     position: static;
   }
   nav .menu .links {
     float: none;
-    height: 100px;
   }
   nav .menu .links ul {
     line-height: 30px;
   }
   nav .menu .links ul li {
     display: block;
-    padding: 7px;
+    padding: 10px;
   }
   nav .menu .links ul li a {
     border-left: 0px;
-    border-right: 0px;
     font-size: 120%;
   }
-  nav .menu .links ul li a:hover {
-    border-left: 0px;
+  nav .menu .links ul:first-child {
+    padding-top: 5px;
+  }
+  nav .menu .links ul:last-child {
+    padding-bottom: 5px;
   }
   nav .menu .logo {
-    float: none;
-    margin-bottom: -5px;
     width: 100%;
     text-align: center;
   }
   nav .menu .logo img {
-    width: 120px;
+    width: 140px;
   }
   .hero {
-    height: 100vh;
+    height: 50vh;
   }
-  .hero .callMe {
-    /* ... */
-  }
-  .hero .callMe .btn-primary.visit {
+  .hero .callme .btn-primary.visit {
     margin-top: 0px;
   }
-  .hero .callMe .btn-primary.visit:hover {
-    /* ... */
-  }
   .hero .animate-text {
-    color: white;
-    text-align: center;
-    margin-top: 140px;
-    text-shadow: 1px 1px 1px black;
+    height: calc(100% - 9.6%);
   }
   .hero .animate-text .rotating-item-one {
-    display: none;
-    position: absolute;
     font-size: 30px;
   }
   .hero .animate-text .rotating-item-two {
-    display: none;
-    float: left;
-    position: absolute;
-    margin-top: -30px;
     font-size: 16px;
   }
   #onas {
-    height: 100vh;
-    margin-top: 45px;
-    margin-bottom: 30px;
+    height: 90vh;
   }
   #onas .description p {
     width: 95%;
-    margin: 0 auto;
     font-size: 16px;
-    padding-bottom: 30px;
   }
   #onas .item {
-    float: left;
     width: 100%;
-    padding-bottom: 15px;
-  }
-  #onas .item p {
-    font-size: 16px;
-    text-transform: uppercase;
   }
 }
 
-/*urządzenia bardzo małe (telefony)*/
+/* urządzenia bardzo małe (telefony) */
 @media (max-width: 767px) {
   nav {
     position: static;
   }
   nav .menu .links {
     float: none;
-    height: 100px;
   }
   nav .menu .links ul {
-    line-height: 30px;
+    line-height: 25px;
   }
   nav .menu .links ul li {
     display: block;
-    padding: 7px;
+    padding: 10px;
   }
   nav .menu .links ul li a {
     border-left: 0px;
-    border-right: 0px;
     font-size: 120%;
   }
-  nav .menu .links ul li a:hover {
-    border-left: 0px;
+  nav .menu .links ul:first-child {
+    padding-top: 5px;
+  }
+  nav .menu .links ul:last-child {
+    padding-bottom: 5px;
   }
   nav .menu .logo {
-    float: none;
-    margin-bottom: -5px;
     width: 100%;
     text-align: center;
   }
@@ -615,53 +492,36 @@ footer p {
     width: 120px;
   }
   .hero {
-    height: 67vh;
+    height: 50vh;
   }
-  .hero .callMe {
-    /* ... */
-  }
-  .hero .callMe button.btn-primary.visit {
+  .hero .callme button.btn-primary.visit {
     margin-top: 0px;
   }
   .hero .animate-text {
-    color: white;
-    text-align: center;
-    margin-top: 130px;
-    text-shadow: 1px 1px 1px black;
+    height: calc(100% - 9.6%);
   }
   .hero .animate-text .rotating-item-one {
-    display: none;
-    position: absolute;
     font-size: 25px;
-    padding: 0 35px;
   }
   .hero .animate-text .rotating-item-two {
-    display: none;
-    float: left;
-    position: absolute;
-    top: 70px;
     font-size: 13px;
-    padding: 0 15px;
   }
   #onas {
-    height: 100vh;
-    margin-top: 23px;
+    height: 90vh;
+    /*margin-top: 23px;*/
     margin-bottom: 30px;
   }
   #onas .description p {
     width: 95%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     font-size: 16px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
   }
   #onas .item {
-    float: left;
     width: 100%;
-    padding-bottom: 15px;
   }
   #onas .item p {
-    font-size: 16px;
-    text-transform: uppercase;
+    /*font-size: 16px;*/
   }
 }
 

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
 @import url('https://fonts.googleapis.com/css?family=Coiny|Rammetto+One');
 
 * {
@@ -13,10 +12,9 @@ body {
 }
 
 body.modal-open {
-            padding: 0 !important;
-            overflow-y: scroll;
-            /*position: fixed;*/
-        }
+			padding: 0 !important;
+			overflow-y: scroll;
+}
 
 .container {
 	width: 100%;
@@ -24,7 +22,7 @@ body.modal-open {
 	margin: 0 auto;
 }
 
-/* grids */
+/* START GRID */
 .row:before,
 .row:after {
 	content: "";
@@ -34,7 +32,7 @@ body.modal-open {
 
 [class*='col-'] {
 	float: left;
- 	margin: 0 auto;
+	margin: 0 auto;
 }
 
 .col-1 {width: 8.33%;}
@@ -49,7 +47,6 @@ body.modal-open {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
 .col-offset-1 {margin-left: 8.33%;}
 .col-offset-2 {margin-left: 16.66%;}
 .col-offset-3 {margin-left: 25%;}
@@ -61,8 +58,9 @@ body.modal-open {
 .col-offest-9 {margin-left: 75%;}
 .col-offest-10 {margin-left: 83.33%;}
 .col-offest-11 {margin-left: 91.66%;}
+/* END GRID */
 
-/* Phone */
+/* START PHONE */
 @keyframes ring {
 	0% {
 		transform: rotate(-15deg);
@@ -120,6 +118,7 @@ body.modal-open {
 }
 /* END PHONE */
 
+/* --- MAIN BODY --- */
 nav {
 	background: #404040;
 	height: 91px;
@@ -128,6 +127,7 @@ nav {
 	display: table;
 	position: fixed;
 	z-index: 1;
+	box-shadow: 0px 3px 5px;
 	.languages {
 		width: 100%;
 		height: 26px;
@@ -137,7 +137,6 @@ nav {
 			float: right;
 			padding: 3px 15px;
 			img {
-				/* ... */
 			}
 			img:hover {
 				box-shadow: 0 0 8px white;
@@ -155,26 +154,22 @@ nav {
 				width: 100%;
 				margin: 0 auto;
 				padding: 0;
-				line-height: 85px;
+				line-height: 92px;
 				text-align: center;
 				li {
-				display: inline-block;
-				padding: 0 20px;
+					display: inline-block;
+					padding: 0 20px;
 					a {
 						text-decoration: none;
 						color: white;
 						text-transform: uppercase;
 						font-family: 'Josefin Sans', sans-serif;
-						font-size: 13px;
+						font-size: 16px;
 						font-weight: bold;
 						letter-spacing: 2px;
 						border-left: 1px solid #313234;
 						padding: 0 16px;
-					}
-					a:hover {
-						/*color: #00c7e8;*/
-						transition: color 0.4s;
-						border-left: 1px solid #313234;
+
 					}
 				}	
 			}
@@ -196,13 +191,13 @@ nav {
 	}
 }
 .hero {
-	height: 101vh;
+	height: 78vh;
 	background: url('../images/jumbotron.jpg');
 	background-size: cover;
-	.callMe {
+	.callme {
 		margin-top: 0px;
 		.btn-primary.visit {
-			margin-top: 111px;
+			margin-top: 112px;
 			padding: 0;
 			height: 40px;
 			width: 100%;
@@ -212,6 +207,8 @@ nav {
 			background-color: #286090;
 			p {
 				padding-top: 10px;
+				margin: 0;
+				height: 40px;
 			}
 		}
 		.btn-primary.visit:hover {
@@ -228,34 +225,34 @@ nav {
 		}
 	}
 	.modal-body {
-		/* ... */
 	}
 	.modal-footer {
-		/* ... */
 	}
 	.animate-text {
 		position: relative;
 		color: white;
 		text-align: center;
-		margin-top: 170px;
 		text-shadow: 1px 1px 3px black;
-		width: 100%;
+		height: calc(76.7%);
 		.rotating-item-one{
-			display: none;
 			position: absolute;
-			font-size: 40px;
+			display: none;
+			top: calc(35% + 0px);
+			font-size: 43px;
 			font-family: 'Rammetto One', cursive;
 		}	
 		.rotating-item-two {
-			display: none;
 			position: absolute;
-			padding-top: 110px;
-			font-size: 20px;
+			display: none;
+			top: calc(50% + 20px);
+			padding: 0 7px;
+			font-size: 25px;
 			font-family: 'Rammetto One', cursive;
 		}
 	}
 }
 #onas {
+	height: 70vh;
 	text-align: center;
 	margin-top: 60px;
 	margin-bottom: 80px;
@@ -307,235 +304,158 @@ footer {
 	}
 }
 
-/*MEDIA*/
-/*urządzenia duże (desktopy, monitory, tv)*/
+/* MEDIA QUERIES 
+/* -------------------------------------------
+/* urządzenia duże (desktopy, monitory, tv) */
 @media (min-width: 1200px) {
 	
 }
 
-/*urządzenia średnie*/
+/* urządzenia średnie */
 @media (min-width: 992px) and (max-width: 1199px) {
 	nav {
-		position: static;
 		menu {
 			.links {
-				display: block;
-				float: left;
-				height: 85px;
 				ul {
-					display: block;
-					float: left;
-					width: 100%;
-					margin: 0 auto;
-					padding: 0;
-					line-height: 85px;
-					text-align: center;
 					li {
-					display: inline-block;
-					padding: 0 20px;
 						a {
-							text-decoration: none;
-							color: white;
-							text-transform: uppercase;
-							font-family: 'Josefin Sans', sans-serif;
-							font-size: 13px;
-							font-weight: bold;
-							letter-spacing: 2px;
-							border-left: 1px solid #313234;
-							padding: 0 16px;
 						}
 						a:hover {
-							/*color: #00c7e8;*/
-							transition: color 0.4s;
-							border-left: 1px solid #313234;
 						}
 					}	
 				}
 			}
 			.logo {
-				display: block;
-				float: right;
-				text-align: left;
-				height: 70px;
 				img {
-					margin-top: 16px;
-					width: 150px;
-					height: auto;
-					padding: 8px;
-					background-color: white;
-					border-radius: 5px;
 				}
 			}
 		}
 	}
 	.hero {
-		height: 84vh;
+		height: 78vh;
 		.callMe {
-			
 			.btn-primary.visit {
-				margin-top: 0px;
 			}
 			.btn-primary.visit:hover {
-				/* ... */
 			}
 		}
 		.animate-text {
-			color: white;
-			text-align: center;
-			margin-top: 170px;
-			text-shadow: 1px 1px 1px black;
+			height: calc(100% - 23.3%);
 			.rotating-item-one{
-				display: none;
-				position: absolute;
-				font-size: 40px;
+				font-size: 35px;
 			}	
 			.rotating-item-two {
-				display: none;
-				float: left;
-				position: absolute;
-				margin-top: -20px;
-				font-size: 16px;
+				font-size: 18px;
 			}
 		}
 	}
 	#onas {
-		height: 100vh;
-		margin-top: 23px;
-		margin-bottom: 30px;
 		.description {
 			p {
-			width: 95%;
-			margin: 0 auto;
-			font-size: 16px;
-			padding-bottom: 10px;
 			}
 		}
 		.item {
-			padding-bottom: 15px;
 			p {
-				font-size: 16px;
-				text-transform: uppercase;
 			}
 		}
 	}
 }
 
-/*urządzenia małe (tablety)*/
+/* urządzenia małe (tablety) */
 @media (min-width: 768px) and (max-width: 991px) {
 	nav {
 		position: static;
 		.menu {
 			.links {
 				float: none;
-				height: 100px;
 				ul {
 					line-height: 30px;
 					li {
 					display: block;
-					padding: 7px;
+					padding: 10px;
 						a {
 							border-left: 0px;
-							border-right: 0px;
 							font-size: 120%;
 						}
-						a:hover {
-							border-left: 0px;
-						}
-					}	
+					}
+				}
+				ul:first-child {
+					padding-top: 5px;
+				}
+				ul:last-child {
+					padding-bottom: 5px;
 				}
 			}
 			.logo {
-				float: none;
-				margin-bottom: -5px;
 				width: 100%;
 				text-align: center;
 				img {
-					width: 120px;
+					width: 140px;
 				}
 			}
 		}
 	}
 	.hero {
-		height: 100vh;
-		.callMe {
-			/* ... */
+		height: 50vh;
+		.callme {
 			.btn-primary.visit {
 				margin-top: 0px;
 			}
 			.btn-primary.visit:hover {
-				/* ... */
 			}
 		}
 		.animate-text {
-			color: white;
-			text-align: center;
-			margin-top: 140px;
-			text-shadow: 1px 1px 1px black ;
+			height: calc(100% - 9.6%);
 			.rotating-item-one{
-				display: none;
-				position: absolute;
 				font-size: 30px;
 			}	
 			.rotating-item-two {
-				display: none;
-				float: left;
-				position: absolute;
-				margin-top: -30px;
 				font-size: 16px;
 			}
 		}
 	}
 	#onas {
-		height: 100vh;
-		margin-top: 45px;
-		margin-bottom: 30px;
+		height: 90vh;
 		.description {
 			p {
-			width: 95%;
-			margin: 0 auto;
-			font-size: 16px;
-			padding-bottom: 30px;
+				width: 95%;
+				font-size: 16px;
 			}
 		}
 		.item {
-			float: left;
 			width: 100%;
-			padding-bottom: 15px;
 			p {
-				font-size: 16px;
-				text-transform: uppercase;
 			}
 		}
 	}
 }
 
-/*urządzenia bardzo małe (telefony)*/
+/* urządzenia bardzo małe (telefony) */
 @media (max-width: 767px) {
 	nav {
 		position: static;
 		.menu {
 			.links {
 				float: none;
-				height: 100px;
 				ul {
-					line-height: 30px;
+					line-height: 25px;
 					li {
 					display: block;
-					padding: 7px;
+					padding: 10px;
 						a {
 							border-left: 0px;
-							border-right: 0px;
 							font-size: 120%;
-						}
-						a:hover {
-							border-left: 0px;
 						}
 					}	
 				}
+				ul:first-child {
+					padding-top: 5px;
+				}
+				ul:last-child {
+					padding-bottom: 5px;
+				}
 			}
 			.logo {
-				float: none;
-				margin-bottom: -5px;
 				width: 100%;
 				text-align: center;
 				img {
@@ -545,60 +465,42 @@ footer {
 		}
 	}
 	.hero {
-		height: 67vh;
-		.callMe {
-			/* ... */
+		height: 50vh;
+		.callme {
 			button.btn-primary.visit {
 				margin-top: 0px;
-			}
-			.btn-primary.visit:active {
-				
 			}
 			.btn-primary.visit:hover {
 				
 			}
 		}
 		.animate-text {
-			color: white;
-			text-align: center;
-			margin-top: 130px;
-			text-shadow: 1px 1px 1px black ;
-
+			height: calc(100% - 9.6%);
 			.rotating-item-one{
-				display: none;
-				position: absolute;
 				font-size: 25px;
-				padding: 0 35px;
 			}	
 			.rotating-item-two {
-				display: none;
-				float: left;
-				position: absolute;
-				top: 70px;
 				font-size: 13px;
-				padding: 0 15px;
+
 			}
 		}
 	}
 	#onas {
-		height: 100vh;
-		margin-top: 23px;
+		height: 90vh;
+		/*margin-top: 23px;*/
 		margin-bottom: 30px;
 		.description {
 			p {
 			width: 95%;
-			margin: 0 auto;
+			/*margin: 0 auto;*/
 			font-size: 16px;
-			padding-bottom: 10px;
+			/*padding-bottom: 10px;*/
 			}
 		}
 		.item {
-			float: left;
 			width: 100%;
-			padding-bottom: 15px;
 			p {
-				font-size: 16px;
-				text-transform: uppercase;
+				/*font-size: 16px;*/
 			}
 		}
 	}
