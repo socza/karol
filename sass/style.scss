@@ -209,6 +209,10 @@ nav {
 			border-radius: 0;
 			border: 0;
 			outline: none;
+			background-color: #286090;
+			p {
+				padding-top: 10px;
+			}
 		}
 		.btn-primary.visit:hover {
 			border-radius: 0;
@@ -571,8 +575,8 @@ footer {
 				float: left;
 				position: absolute;
 				top: 70px;
-				font-size: 12px;
-				padding: 0 35px;
+				font-size: 13px;
+				padding: 0 15px;
 			}
 		}
 	}

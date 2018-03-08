@@ -280,6 +280,11 @@ nav .menu .logo img {
   border-radius: 0;
   border: 0;
   outline: none;
+  background-color: #286090;
+}
+
+.hero .callMe .btn-primary.visit p {
+  padding-top: 10px;
 }
 
 .hero .callMe .btn-primary.visit:hover {
@@ -635,8 +640,8 @@ footer p {
     float: left;
     position: absolute;
     top: 70px;
-    font-size: 12px;
-    padding: 0 35px;
+    font-size: 13px;
+    padding: 0 15px;
   }
   #onas {
     height: 100vh;
