@@ -254,7 +254,7 @@ nav .menu .logo img {
 }
 
 .hero {
-  height: 78vh;
+  height: 730px;
   background: url("../images/jumbotron.jpg");
   background-size: cover;
 }
@@ -300,7 +300,7 @@ nav .menu .logo img {
   color: white;
   text-align: center;
   text-shadow: 1px 1px 3px black;
-  height: calc(76.7%);
+  height: calc(79.2%);
 }
 
 .hero .animate-text .rotating-item-one {
@@ -387,10 +387,10 @@ footer p {
 /* urządzenia średnie */
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero {
-    height: 78vh;
+    height: 730px;
   }
   .hero .animate-text {
-    height: calc(100% - 23.3%);
+    height: calc(100% - 20.8%);
   }
   .hero .animate-text .rotating-item-one {
     font-size: 35px;
@@ -433,13 +433,13 @@ footer p {
     width: 140px;
   }
   .hero {
-    height: 50vh;
+    height: 500px;
   }
   .hero .callme .btn-primary.visit {
     margin-top: 0px;
   }
   .hero .animate-text {
-    height: calc(100% - 9.6%);
+    height: calc(100% - 8%);
   }
   .hero .animate-text .rotating-item-one {
     font-size: 30px;
@@ -492,13 +492,13 @@ footer p {
     width: 120px;
   }
   .hero {
-    height: 50vh;
+    height: 500px;
   }
   .hero .callme button.btn-primary.visit {
     margin-top: 0px;
   }
   .hero .animate-text {
-    height: calc(100% - 9.6%);
+    height: calc(100% - 8%);
   }
   .hero .animate-text .rotating-item-one {
     font-size: 25px;

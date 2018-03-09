@@ -191,7 +191,7 @@ nav {
 	}
 }
 .hero {
-	height: 78vh;
+	height: 730px;
 	background: url('../images/jumbotron.jpg');
 	background-size: cover;
 	.callme {
@@ -233,7 +233,7 @@ nav {
 		color: white;
 		text-align: center;
 		text-shadow: 1px 1px 3px black;
-		height: calc(76.7%);
+		height: calc(79.2%);
 		.rotating-item-one{
 			position: absolute;
 			display: none;
@@ -332,7 +332,7 @@ footer {
 		}
 	}
 	.hero {
-		height: 78vh;
+		height: 730px;
 		.callMe {
 			.btn-primary.visit {
 			}
@@ -340,7 +340,7 @@ footer {
 			}
 		}
 		.animate-text {
-			height: calc(100% - 23.3%);
+			height: calc(100% - 20.8%);
 			.rotating-item-one{
 				font-size: 35px;
 			}	
@@ -396,7 +396,7 @@ footer {
 		}
 	}
 	.hero {
-		height: 50vh;
+		height: 500px;
 		.callme {
 			.btn-primary.visit {
 				margin-top: 0px;
@@ -405,7 +405,7 @@ footer {
 			}
 		}
 		.animate-text {
-			height: calc(100% - 9.6%);
+			height: calc(100% - 8%);
 			.rotating-item-one{
 				font-size: 30px;
 			}	
@@ -465,7 +465,7 @@ footer {
 		}
 	}
 	.hero {
-		height: 50vh;
+		height: 500px;
 		.callme {
 			button.btn-primary.visit {
 				margin-top: 0px;
@@ -475,7 +475,7 @@ footer {
 			}
 		}
 		.animate-text {
-			height: calc(100% - 9.6%);
+			height: calc(100% - 8%);
 			.rotating-item-one{
 				font-size: 25px;
 			}	
